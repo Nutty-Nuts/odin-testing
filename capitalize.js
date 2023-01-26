@@ -1,7 +1,12 @@
 function capitalize(inputString) {
-    let uppercaseString = inputString.toUpperCase();
+    let firstLetter = inputString.charAt(0);
+    firstLetter = firstLetter.toUpperCase();
 
-    return uppercaseString;
+    let remainingWord = inputString.slice(1);
+
+    let outputString = `${firstLetter}${remainingWord}`;
+
+    return outputString;
 }
 
 module.exports = capitalize;
