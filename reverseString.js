@@ -6,7 +6,7 @@ function reverseString(inputString) {
         reversedString = `${reversedString}${inputStringArray[i]}`;
     }
 
-    return reverseString;
+    return reversedString;
 }
 
 module.exports = reverseString;
